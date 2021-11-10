@@ -15,7 +15,8 @@ class CreateSeccionTable extends Migration
     {
         Schema::create('seccion', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('description');
+            $table->decimal('precio', 8, 2);           
         });
     }
 
